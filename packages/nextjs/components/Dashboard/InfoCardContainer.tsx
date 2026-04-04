@@ -35,7 +35,7 @@ const InfoCardContainer: React.FC<InfoCardContainerProps> = () => {
       <div
         className="relative flex-1 h-[120px] block bg-gradient-to-l from-pink-350 to-pink-150 rounded-lg overflow-hidden cursor-pointer"
         onClick={() => openModal("switchAccount")}
-      >
+      >12321321321321312321
         <div
           className="absolute right-0 top-0 h-full w-auto bg-[url('/dashboard/bg-account.svg')] bg-no-repeat bg-right bg-contain opacity-20"
           style={{ width: "70%" }}
