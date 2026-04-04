@@ -55,11 +55,11 @@ jobs:
           GCP_REPOSITORY: ${{ vars.GCP_REPOSITORY }}
           GCP_IMAGE: ${{ vars.GCP_BACKEND_NAME }}
         run: |
-          gcloud run jobs update ${{ vars.GCP_BACKEND_NAME }} \
+          gcloud run jobs update ${{ vars.GCP_MIGRATION_JOB_NAME }} \
             --image ${GCP_LOCATION}-docker.pkg.dev/${GCP_PROJECT_ID}/${GCP_REPOSITORY}/${GCP_IMAGE}:${SHORT_SHA} \
             --region ${{ vars.GCP_LOCATION }}
 
-          gcloud run jobs execute ${{ vars.GCP_BACKEND_NAME }} \
+          gcloud run jobs execute ${{ vars.GCP_MIGRATION_JOB_NAME }} \
             --region ${{ vars.GCP_LOCATION }} \
             --wait
 
