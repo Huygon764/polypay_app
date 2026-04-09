@@ -26,7 +26,7 @@ export class AuthService {
     const { commitment } = dto;
 
     this.logger.log(`Verifying auth proof for commitment: ${commitment}`);
-    this.logger.log("hihihi");
+    this.logger.log("hihihi version 2");
 
     let proofResult;
     try {
