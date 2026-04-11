@@ -42,6 +42,7 @@ jobs:
           GCP_IMAGE: ${{ vars.GCP_FRONTEND_NAME }}
         run: |
           cat > packages/nextjs/.env.production << EOF
+          NEXT_PUBLIC_API_URL=${{ vars.NEXT_PUBLIC_API_URL }}
           NEXT_PUBLIC_NETWORK=${{ vars.NEXT_PUBLIC_NETWORK }}
           EOF
 
